@@ -1,0 +1,16 @@
+create database Family default character set utf8;
+use Family;
+
+create table income
+(
+    id int auto_increment not null primary key,
+    date date null,
+    item varchar(30) null,
+    price int(10) null
+) ENGINE=InnoDB; 
+
+insert into income
+  (date, item, price)
+  values (20160627, 'apple' , 100),
+         (20160628, 'beef' , 500),
+         (20160629, 'water' , 50);
